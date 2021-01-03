@@ -17,7 +17,7 @@ OAUTH_SCOPE = "https://www.googleapis.com/auth/drive"
 REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
 G_DRIVE_CLIENT_ID = "267058692293-lrccn5bg7gtmfp68jsg3l642mudtsjuo.apps.googleusercontent.com "
-G_DRIVE_CLIENT_SECRET = "vocSrva3KTWESpcS1RtoNZIE"
+G_DRIVE_CLIENT_SECRET = "CsuvcMHTB4LVHXvfODsLWepo"
 flow = None
 
 @Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Authorize))
