@@ -16,7 +16,7 @@ from bot.helpers.utils import CustomFilters
 OAUTH_SCOPE = "https://www.googleapis.com/auth/drive"
 REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob"
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
-G_DRIVE_CLIENT_ID = "267058692293.apps.googleusercontent.com"
+G_DRIVE_CLIENT_ID = "267058692293-vsahgen26krq3bcjcjk2ielpc5g4uaal.apps.googleusercontent.com"
 G_DRIVE_CLIENT_SECRET = "vocSrva3KTWESpcS1RtoNZIE"
 flow = None
 
