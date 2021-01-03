@@ -2,7 +2,7 @@ class config:
     BOT_TOKEN = "1493285894:AAFtDy9ux_o1Xs4o4jWgF50pxktTl7cuCSU"
     APP_ID = "2360884"
     API_HASH = "b73ea9bebe99756cd2ac008df0e3622e"
-    DATABASE_URL = "postgres://akvnxdarcocoej:b4b0f62339e1eda687b3d04898ae5f9b445d8d97fcd32089f94d5e525431e0a7@ec2-3-232-240-231.compute-1.amazonaws.com:5432/dd5pfod1a84l8g "
+    DATABASE_URL = "postgres://akvnxdarcocoej:b4b0f62339e1eda687b3d04898ae5f9b445d8d97fcd32089f94d5e525431e0a7@ec2-3-232-240-231.compute-1.amazonaws.com:5432/dd5pfod1a84l8g"
     SUDO_USERS = "925498209 1070614004" # Sepearted by space.
     SUPPORT_CHAT_LINK = "https://t.me/moviesshyam"
     DOWNLOAD_DIRECTORY = "./downloads/"
