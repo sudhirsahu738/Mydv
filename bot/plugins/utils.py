@@ -37,7 +37,7 @@ def _restart(client, message):
 
 
 
-@Client.on_message(filters.private & filters.incoming & filters.command(['login']))
+@Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(chat_id = message.chat.id,
         text = tr.START_MSG.format(message.from_user.mention),
