@@ -43,7 +43,39 @@ def _start(client, message):
         text = tr.START_MSG.format(message.from_user.mention),
         reply_to_message_id = message.message_id
     )
+start_callback_filter = filters.create(lambda _, __, query: query.data.startswith('start+'))
 
+@Client.on_callback_query(start_callback_filter)
+def start_answer(c, callback_query):
+    chat_id = callback_query.from_user.id
+    message_id = callback_query.message.message_id
+    msg = int(callback_query.data.split('+')[1])
+    c.edit_message_text(chat_id = chat_id,    message_id = message_id,
+        text = tr.START_MSG[msg],    reply_markup = InlineKeyboardMarkup(map(msg))
+    )
+def map(pos):
+    if(pos==1):
+        button = [
+            [InlineKeyboardButton(text = '-->', callback_data = "start+2")]
+        ]
+    elif(pos==len(tr.START_MSG)-1):
+
+        button = [
+            [
+             InlineKeyboardButton(text = 'Support Chat', url = SUPPORT_CHAT_LINK),
+             InlineKeyboardButton(text = 'Feature Request', url = "https://github.com/viperadnan-git/google-drive-telegram-bot/issues/new")
+            ],
+            [InlineKeyboardButton(text = '<--', callback_data = f"start+{pos-1}")]
+
+        ]
+    else:
+        button = [
+            [
+                InlineKeyboardButton(text = '<--', callback_data = f"tart+{pos-1}"),
+                InlineKeyboardButton(text = '-->', callback_data = f"start+{pos+1}")
+            ],
+        ]
+    return button
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['help']))
 def _help(client, message):
