@@ -21,7 +21,7 @@ class BotCommands:
 class Messages:
     START_MSG = [
         ".",
-        "**Welcome to STAR DRIVE UPLOADER bot!**\n\n__I can upload file or direct download link to your Google drive or Team drive. Just authenticate me to access drive.__\n\n__You can do this by /login command, for more information press following button.__",
+        "**Welcome to STAR DRIVE UPLOADER bot!**\n\n__I can upload file or direct download link to your Google drive or Team drive. Just authenticate me to access drive.__\n\n__You can do this by /auth command, for more information press following button.__",
         f"**Authenticating Google Drive**\n__Send the /{BotCommands.Authorize[0]} commmand and you will receive a URL, visit URL and follow the steps and send the received code here. Use /{BotCommands.Revoke[0]} to revoke your currently logged Google Drive Account.__\n\n**Note: I will not listen to any command or message (except /{BotCommands.Authorize[0]} command) until you authorize me.\nSo, Authorization is mandatory !**",
         
         f"**Direct Links**\n__Send me a direct download link for a file and i will download it on my server and Upload it to your Google Drive Account. You can rename files before uploading to GDrive Account. Just send me the URL and new filename separated by ' | '.__\n\n**__Examples:__**\n```https://example.com/AFileWithDirectDownloadLink.mkv | New FileName.mkv```\n\n**Telegram Files**\n__To Upload telegram files in your Google drive Account just send me the file and i will download and upload it to your Google Drive Account. Note: Telegram Files Downloading are slow. it may take longer for big files.__\n\n**YouTube-DL Support**\n__Download files via youtube-dl.\nUse /{BotCommands.Ytdl[0]} (YouTube Link/YouTube-DL Supported site link)__",
@@ -31,7 +31,7 @@ class Messages:
         f"**Delete Google Drive Files**\n__Delete google drive files. Use /{BotCommands.Delete[0]} (File/Folder URL) to delete file.\nYou can also empty trash files use /{BotCommands.EmptyTrash[0]}\nNote: Files are deleted permanently. This process cannot be undone.\n\n**Copy Google Drive Files**\n__Yes, Clone or Copy Google Drive Files.\n__Use /{BotCommands.Clone[0]} (File id / Folder id or URL) to copy Google Drive Files in your Google Drive Account.__",
         
         "**Rules & Precautions**\n__1. Don't copy BIG Google Drive Files/Folders. It may hang the bot and your files maybe damaged.\n2. Send One request at a time unless bot will stop all processes.\n3. Don't send slow links @transload it first.\n4. Don't misuse, overload or abuse this free service.__",
-        "**Developed by @viperadnan**"
+        "**Developed by @Moviesshyam**"
         ]
 
     HELP_MSG = [
